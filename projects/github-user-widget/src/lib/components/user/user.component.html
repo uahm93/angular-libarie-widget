@@ -1,0 +1,25 @@
+<div class="github-card user-card">
+    <div class="header user"></div>
+    <a class="avatar" [href]="'https://github.com/'+user.login">
+        <img [src]="user.avatar_url + '&s=80' ">
+    </a>
+    <div class="content" >
+        <ul class="status">
+            <li>
+                <a [href]="'https://github.com/'+user.login">
+                    <strong> {{user.public_repos}} </strong> Repositorios
+                </a>
+            </li>
+            <li>
+                <a [href]="'https://github.com/'+user.login+'/following'">
+                    <strong> {{user.followers}} </strong> seguidores
+                </a>
+            </li>
+            <li>
+                <a [href]="'https://github.com/'+user.login">
+                    <strong> {{user.public_gists}} </strong> Gits
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -5,8 +5,15 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
     "strict": true,
     "noImplicitReturns": true,
+    "paths": {
+      "github-user-widget": [
+        "dist/github-user-widget/github-user-widget",
+        "dist/github-user-widget"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
